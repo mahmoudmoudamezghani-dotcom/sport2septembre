@@ -6,7 +6,7 @@ import { AdminComponent } from './components/admin/admin.component';
 
 export const routes: Routes = [
     // http://localhost:4200 => home component will be displayed 
-{ path:" ", component :HomeComponent },
+{ path:"", component :HomeComponent },
 
 // http://localhost:4200 => login will be displayed
 { path:"singin", component : LoginComponent},
