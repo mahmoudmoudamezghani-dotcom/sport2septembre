@@ -8,5 +8,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  //proprety 
+  title:string = "Home Page";
+  // methode
+  calcul(a:number,b:number){
+    return a + b ;
+  }
 
 }
