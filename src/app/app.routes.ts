@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { SingupComponent } from './components/singup/singup.component';
+
 import { AdminComponent } from './components/admin/admin.component';
+import { SignupComponent } from './components/signup/signup.component.spec';
 
 export const routes: Routes = [
     // http://localhost:4200 => home component will be displayed 
@@ -12,7 +13,7 @@ export const routes: Routes = [
 { path:"singin", component : LoginComponent},
 
 // http://localhost:4200 => singup component will be displayed
-{ path:"inscription", component : SingupComponent},
+{ path:"inscription", component : SignupComponent },
 
 // http://localhost:4200 => admin Component will be displayed 
 { path:"admin", component: AdminComponent},
