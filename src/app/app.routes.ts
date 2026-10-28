@@ -6,6 +6,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { SignupComponent } from './components/signup/signup.component.spec';
 import { AddMatcheComponent } from './components/add-matche/add-matche.component';
 import { AddPlayerComponent } from './components/add-player/add-player.component';
+import { AddTeamComponent } from './components/add-team/add-team.component';
 
 export const routes: Routes = [
     // http://localhost:4200 => home component will be displayed 
@@ -25,4 +26,6 @@ export const routes: Routes = [
 
 // http://localhost:4200 => add-player Component will be displayed
 {path:"addplayer", component:AddPlayerComponent}, 
+// http:localhost:4200 ==> add-team will be displayed
+{path:"addteam",component:AddTeamComponent},
 ];
