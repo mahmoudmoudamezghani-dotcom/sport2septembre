@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './add-matche.component.css'
 })
 export class AddMatcheComponent {
+
+
+  addMatch(){
+    alert("Btn clicked");
+
+  }
 
 }
