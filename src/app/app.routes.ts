@@ -8,6 +8,7 @@ import { AddMatcheComponent } from './components/add-matche/add-matche.component
 import { AddPlayerComponent } from './components/add-player/add-player.component';
 import { AddTeamComponent } from './components/add-team/add-team.component';
 import { MatchesComponent } from './components/matches/matches.component';
+import { TeamsComponent } from './components/teams/teams.component';
 
 export const routes: Routes = [
     // http://localhost:4200 => home component will be displayed 
@@ -31,4 +32,6 @@ export const routes: Routes = [
 {path:"addteam",component:AddTeamComponent},
 //http://localhost:4200 => matches
 {path:"matches",component:MatchesComponent},
+//http://localhost:4200 => teams
+{path:"teams",component:TeamsComponent},
 ];
