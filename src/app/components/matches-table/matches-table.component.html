@@ -10,12 +10,12 @@
     </tr>
   </thead>
 
-  <tr>
-    <th scope="row">1</th>
-    <td>0</td>
-    <td>2</td>
-    <td>Team A</td>
-    <td>Team B</td>
+  <tr *ngFor="let obj of matchesTab">
+    <td>{{obj.id}}</td>
+    <td>{{obj.scoreOne}}</td>
+    <td>{{obj.scoreTwo}}</td>
+    <td>{{obj.teamOne}}</td>
+    <td>{{obj.teamTwo}}</td>
 
   </tr>
 
