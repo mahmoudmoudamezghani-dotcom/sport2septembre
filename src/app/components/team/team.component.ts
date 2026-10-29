@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-team',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './team.component.css'
 })
 export class TeamComponent {
+  // obj : param de teamcomponent
+@Input() objInput:any ={};
+
 
 }
