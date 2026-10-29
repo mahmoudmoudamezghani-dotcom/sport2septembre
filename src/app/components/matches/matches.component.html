@@ -8,12 +8,7 @@
     </div>
 </div>
 
-<div>
-    <app-result></app-result>
+<div *ngFor="let match of matchesData">
+    <app-result [obj]="match"></app-result>
 </div>
-<div>
-    <app-result></app-result>
-</div>
-<div>
-    <app-result></app-result>
-</div>
+
