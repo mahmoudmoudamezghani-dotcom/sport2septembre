@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class TeamService {
 
-   teamURL: string = "http://localhost:3000";
+   teamURL: string = "http://localhost:3000/teams";
 
   constructor(private httpClient:HttpClient ) { }
   //req 1

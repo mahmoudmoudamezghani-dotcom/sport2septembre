@@ -1,0 +1,7 @@
+// lazemni na3tih adressa 
+// http://localhost:3000/
+// import app
+const app = require('./BACKEND/app');
+// server is listennig on port 3000
+app.listen(3000);
+
