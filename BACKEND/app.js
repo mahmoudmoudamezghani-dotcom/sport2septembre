@@ -55,11 +55,35 @@ app.use(express.urlencoded({extended:true}))
 
 
 // traitement logiques des requests
-// math 1
+// format de les traitement de requetes 
+/*
+app.methode_HTTP("/path",(req,res)=>{....});
+ */
+// business logic : All matches 
+app.get("/matches",(req,res)=>{
+    console.log("Get All matches")}
+);
 
-// math 2
+// business logic : match by id 
+app.get("/matches/:id",(req,res)=>{
+    console.log("Get match by Id ")
+});
 
-// math 3
+
+// business logic : delete match by Id
+app.delete("/matches/:id",(req,res)=>{
+    console.log("delete match by ID")
+}); 
+
+// business logic : add match 
+app.post("/matches",(req,res)=>{
+    console.log("addition match")
+});
+
+// business logic : update match 
+app.put("/matches",(req,res)=>{
+    console.log("update match")
+});
 
 
 // make app importable to other files
