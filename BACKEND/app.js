@@ -52,7 +52,15 @@ app.use(express.json());
 // get object data from request 
 app.use(express.urlencoded({extended:true}))
 
-
+// DB simulation
+  let matchesTab = [
+    {id : 1 , scoreOne:0,scoreTwo:0,teamOne:'team A',teamTwo:'team B'},
+    {id : 1 , scoreOne:4,scoreTwo:1,teamOne:'team C',teamTwo:'team D'},
+    {id : 1 , scoreOne:1,scoreTwo:3,teamOne:'team E',teamTwo:'team F'},
+    {id : 1 , scoreOne:2,scoreTwo:5,teamOne:'team G',teamTwo:'team H'},
+    {id : 1 , scoreOne:3,scoreTwo:3,teamOne:'team I',teamTwo:'team J'},
+  ];
+  
 
 // traitement logiques des requests
 // format de les traitement de requetes 
@@ -77,12 +85,15 @@ app.delete("/matches/:id",(req,res)=>{
 
 // business logic : add match 
 app.post("/matches",(req,res)=>{
-    console.log("addition match")
+    console.log("addition match");
+    let obj = req.body;
 });
 
 // business logic : update match 
 app.put("/matches",(req,res)=>{
-    console.log("update match")
+    console.log("update match");
+    let obj = req.body;
+
 });
 
 
